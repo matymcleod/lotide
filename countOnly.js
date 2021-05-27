@@ -26,7 +26,7 @@ const countOnly = function (allItems, itemsToCount) {
   return results;
 }
 
-// this is allItems
+// this is passed into countOnly as allItems
 const firstNames = [
   "Karl",
   "Salima",
@@ -39,6 +39,7 @@ const firstNames = [
   "Joe"
 ];
 
+// This is passed into countOnly as itemsToCount
 const result1 = countOnly(firstNames, { 
   "Jason": true, 
   "Karima": true, 
