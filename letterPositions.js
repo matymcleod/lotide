@@ -22,6 +22,7 @@ const letterPositions = function(sentence) {
   const results = {};
   for(let i = 0; i < sentence.length; i++){
     const letter = sentence[i];
+    console.log(sentence[i]);
     if(letter !== " "){
       if(!Array.isArray(results[letter])){
       results[letter] = [i];
