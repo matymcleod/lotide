@@ -16,7 +16,7 @@ const assertArraysEqual = require('./assertArraysEqual')
 // }
 // check length of input to see if length is odd or even
 const middle = function (arr){
-  let theMiddle;
+  let theMiddle = [];
   if(arr.length === 1 || arr.length === 2){
     return [];
   }
@@ -29,10 +29,10 @@ const middle = function (arr){
   }
 }
 
-const got = middle([1, 2, 3, 4,]);
-const want = [2, 3];
+// const got = middle([1, 2, 3, 4,]);
+// const want = [2, 3];
 
-assertArraysEqual(got, want);
+// assertArraysEqual(got, want);
 
 // eqArrays([1, 2, 3], [1, 2, 3]);
 // eqArrays([1, 2, 3], [1, 2]);
