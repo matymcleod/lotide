@@ -1,13 +1,8 @@
-//Create a function tail which returns the "tail" of an array: everything except for the first item (head) of the provided array.
-//Your function should not modify the array that is passed in. It should return a new array.
-// const tail = function(words){
-//   let newArr = [];
-//   newArr += words.slice(1);
-//   return newArr;
-// }
+// Returns all elements of an array except for the first element at index 0.
+
 const tail = function(array) {
-  let answer = array.slice(array.length-1);
-  return answer;
+  let end = array.slice(1, array.length);
+  return end;
 };
 
 module.exports = tail;
