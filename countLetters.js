@@ -1,15 +1,8 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`Assertion Failed: ${actual} !=== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 const string = "hel lo";
 const countLetters = function(string) {
   const obj = {};
-
   for (let i = 0; i < string.length; i++) {
     const ch = string[i];
     if (ch !== ' ') {
@@ -19,6 +12,7 @@ const countLetters = function(string) {
       obj[ch]++;
     }
   }
+  console.log('function call of obj: ', obj);
   return obj;
 };
 
