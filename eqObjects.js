@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual !== expected) {
-    console.log(`Assertion Failed: ${actual} !=== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 const eqObjects = function(object1, object2) {
   let object1Keys = Object.keys(object1);
@@ -13,6 +7,7 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   for(let key in object1) {
+    // method returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it).
     if(object2.hasOwnProperty(key)) {
       if(object2[key] !== object1[key]) {
         return false;
