@@ -24,6 +24,7 @@
     "mocha": "^8.4.0"
   },
   "dependencies": {
-    "edit-script": "^2.0.0"
+    "edit-script": "^2.0.0",
+    "eslint": "^7.29.0"
   }
 }
