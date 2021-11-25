@@ -26,6 +26,7 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 
+// Testing the test function
 assertObjectsEqual({ a: '1', b: 2 }, { a: '1', b: 2 });
 assertObjectsEqual({ a: '1', b: 2 }, { a: '1', b: 3 });
 assertObjectsEqual({ a: '1', b: 2 }, { a: '1'});
