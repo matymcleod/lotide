@@ -12,4 +12,6 @@ const assertArraysEqual = function(actual, expected){
 // assertArraysEqual(["word", "to", "your", "mother"], ["word", "to", "your", "mother"]);
 // assertArraysEqual(["word", "to", "your", "mother"], ["word", "to", "your", "father"]);
 // assertArraysEqual(["word", "to", "your", "mother"], ["word", "to", "your"]);
+
+// exports assertArraysEqual function for global use
 module.exports = assertArraysEqual;
