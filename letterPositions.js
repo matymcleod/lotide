@@ -15,5 +15,7 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
+
+//test test test
 console.log('Result of letterPositions: ', letterPositions('hel lo'));
 assertArraysEqual(letterPositions("hello").o, [4]);
